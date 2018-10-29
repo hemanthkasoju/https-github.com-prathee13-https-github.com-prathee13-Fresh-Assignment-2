@@ -11,7 +11,6 @@ import UIKit
 
 class TaskTableViewController: UITableViewController {
     
-    
     //MARK: Priorities
     
     var tasks = [Task]()
@@ -132,7 +131,6 @@ class TaskTableViewController: UITableViewController {
             
         }
     }
- 
     
     //MARK: Actions
     @IBAction func unwindToTaskList(sender: UIStoryboardSegue) {

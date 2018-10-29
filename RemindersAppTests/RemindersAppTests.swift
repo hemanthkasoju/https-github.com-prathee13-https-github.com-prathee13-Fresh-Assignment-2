@@ -2,8 +2,6 @@
 //  RemindersAppTests.swift
 //  RemindersAppTests
 //
-//  Created by Hemanth Kasoju on 2018-10-22.
-//  Copyright © 2018 Hemanth Kasoju. All rights reserved.
 //
 
 import XCTest

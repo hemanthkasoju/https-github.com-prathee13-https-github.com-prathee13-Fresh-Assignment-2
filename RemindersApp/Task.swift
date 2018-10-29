@@ -61,7 +61,8 @@ class Task: NSObject, NSCoding {
         
         // Because photo is an optional property of Meal, just use conditional cast.
         let Photo = aDecoder.decodeObject(forKey: PropertyKey.photo) as? UIImage
-        // Because photo is an optional property of Meal, just use conditional cast.
+        
+        // Because thumbnail is an optional property of Meal, just use conditional cast.
         let Thumbnail = aDecoder.decodeObject(forKey: PropertyKey.photo) as? UIImage
         
         guard let CurrentDate = aDecoder.decodeObject(forKey: PropertyKey.currentDate) as? String else {
@@ -87,7 +88,6 @@ class Task: NSObject, NSCoding {
         
         // Must call designated initializer.
         self.init(title: Title, photo: Photo, currentDate:CurrentDate, dueDate: DueDate, priority: Priority, notes: Notes, thumbnail: Thumbnail)
-        
     }
     
     init?(title: String, photo: UIImage?, currentDate: String, dueDate: String, priority: String, notes: String, thumbnail:UIImage? = nil) {
